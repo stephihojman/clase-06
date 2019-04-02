@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <style>
-        fieldset
-        {
-            display: inline;
-        }
-    titulo-de-formulario
-    {
-        color: violet;
-        font-size: 24px;
-        background-color: black;
-        display: inline;
-    }
-    </style>
-  </head>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main6.css">
+  <script src="main6.js"></script>
+  <style>
+      fieldset
+      {
+          display: inline;
+      }
+  titulo-de-formulario
+  {
+      color: violet;
+      font-size: 24px;
+      background-color: black;
+      display: inline;
+  }
+  titulo-de-formulario-2
+  {
+      color: rosybrown;
+      font-size: 24px;
+      background-color: black;
+      display: inline;
+  }
+  form {
+    margin-top: 10px;
+  }
+  </style>
+</head>
+</html>
+
   <body>
     <!--Encabezado -->
     <header>
@@ -41,7 +55,7 @@
         <legend>
           <titulo-de-formulario>Datos personales</titulo-de-formulario>
         </legend>
-        <label for="Nombre-y-apellido">Nombres y Apellidos</label>
+        <label for="nombre-y-apellido">Nombres y Apellidos</label>
         <input type="text" placeholder="Nombres y Apellidos" /><br/>
         <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
         <input type="date" /><br/>
@@ -50,14 +64,14 @@
         <!--tipo de sangre-->
         <label for="tipos-de-sangre">Tipo de sangre</label>
         <span id="tipos-de-sangre">
-          <label for="Tipo-de-sangre-0">0</label>
-          <input id="Tipo-de-sangre-0" type="radio" name="tipo-de-sangre" />
-          <label for="Tipo-de-sangre-A">A</label>
-          <input id="Tipo-de-sangre-A" type="radio" name="tipo-de-sangre" />
-          <label for="Tipo-de-sangre-B">B</label>
-          <input id="Tipo-de-sangre-B" type="radio" name="tipo-de-sangre" />
-          <label for="Tipo-de-sangre-AB">AB</label>
-          <input id="Tipo-de-sangre-AB" type="radio" name="tipo-de-sangre" />
+          <label for="tipo-de-sangre-0">0</label>
+          <input id="tipo-de-sangre-0" type="radio" name="tipo-de-sangre" />
+          <label for="tipo-de-sangre-A">A</label>
+          <input id="tipo-de-sangre-A" type="radio" name="tipo-de-sangre" />
+          <label for="tipo-de-sangre-B">B</label>
+          <input id="tipo-de-sangre-B" type="radio" name="tipo-de-sangre" />
+          <label for="tipo-de-sangre-AB">AB</label>
+          <input id="tipo-de-sangre-AB" type="radio" name="tipo-de-sangre" />
           <!--Fin tipo-->
           <select name="rh-de-sangre" id="rh-de-sangre">
             <option value="">Seleccione su RH</option>
@@ -68,7 +82,7 @@
         </span>
         <label for="email">Email</label>
         <input type="email" placeholder="Email" /><br/>
-        <label for="Telefono">Telefono</label>
+        <label for="telefono">Telefono</label>
         <input type="number" placeholder="Telefono" /><br/>
         <label for="numero-de-documento">DNI</label>
         <input type="number" placeholder="DNI" /></br>
@@ -77,5 +91,33 @@
       </fieldset>
     </form>
     <!--Fin contenido-->
+    <!--Form 2-->
+<form action="">
+  <fieldset>
+    <legend>
+        <titulo-de-formulario-2>Datos postales</titulo-de-formulario-2>
+      </legend>
+      <label for="calle">Calle</label>
+        <input type="text" placeholder="Calle" /><br/>
+      <label for="numero">Numero</label>
+        <input type="number" placeholder="Numero"><br/>
+      <label for="casa-o-depto">Casa o Departamento</label>
+        <select name="casa-o-depto" id="casa-o-depto">
+            <option value="casa">Casa</option>
+            <option value="depto">Departamento</option>
+          </select></br>
+      <label for="piso">Piso</label>
+          <input type="number" placeholder="Piso"><br/>
+      <label for="depto">Departamento</label>
+          <input type="text" placeholder="Depto"><br/>
+      <label for="codigo-postal">Codigo postal</label>
+        <input type="number" placeholder="Codigo Postal"><br/>
+      <label for="localidad">Localidad</label>  
+        <input type="text" placeholder="Localidad"><br/>
+      <label for="provincia">Provincia</label>
+        <input type="text" placeholder="Provincia"><br/>
+    </fieldset>
+</form>
+    <!-- Fin Form 2-->
   </body>
 </html>
