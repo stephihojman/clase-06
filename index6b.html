@@ -101,11 +101,13 @@
         <input type="text" placeholder="Calle" /><br/>
       <label for="numero">Numero</label>
         <input type="number" placeholder="Numero"><br/>
-      <label for="casa-o-depto">Casa o Departamento</label>
-        <select name="casa-o-depto" id="casa-o-depto">
-            <option value="casa">Casa</option>
-            <option value="depto">Departamento</option>
-          </select></br>
+      <label for="casa-o-depto">Vivienda:</label>
+      <span id="casa-o-depto">
+        <label for="casa">Casa</label>
+        <input id="casa" type="radio" name="casa-o-depto" />
+        <label for="depto">Depto</label>
+        <input id="depto" type="radio" name="casa-o-depto" />
+        </span><br/>
       <label for="piso">Piso</label>
           <input type="number" placeholder="Piso"><br/>
       <label for="depto">Departamento</label>
@@ -119,5 +121,9 @@
     </fieldset>
 </form>
     <!-- Fin Form 2-->
+    <!-- Form 3-->
+    <!-- Fin Form 3-->
+
+    <form action=""><button type="submit">Enviar formulario</button></form>
   </body>
 </html>
