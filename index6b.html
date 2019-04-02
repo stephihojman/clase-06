@@ -133,12 +133,40 @@
       <legend>
         <titulo-de-formulario-3>Datos random</titulo-de-formulario-3>
       </legend>
-
-
+      <label for="veiculos">Que medios de transporte usas con más frecuencia?</label><br/>
+      <span id="veiculos">
+    <label for="colectivo">Colectivo</label>
+<input id="colectivo" type="checkbox"/>
+    <label for="subte">Subte</label>
+<input id="subte" type="checkbox"/>
+    <label for="tren">Tren</label>
+<input id="tren" type="checkbox"/>
+    <label for="bici">Bici</label>
+<input id="bici" type="checkbox"/>
+    <label for="auto">Auto</label>
+<input id="auto" type="checkbox"/>
+      </span><br/>
+      <label for="pareja">Tenes pareja? Convivis?</label><br/>
+      <span id="pareja">
+        <input id="si-si" type="radio" name="convivencia">
+        <label for="si-si">Si, tengo pareja y convivo</label>
+        <input id="si-no" type="radio" name="convivencia">
+        <label for="si-no">Si, tengo pareja pero no convivo</label>
+        <input id="no" type="radio" name="convivencia">
+        <label for="no">No tengo pareja</label>
+      </span><br/>
+      <label for="trabajo">Tenes trabajo?</label><br/>
+      <span id="trabajo">
+          <input id="si-blanco" type="radio" name="trabajo">
+<label for="si-blanco">Si, trabajo en blanco</label>
+          <input id="si-negro" type="radio" name="trabajo">
+<label for="si-negro">Si, trabajo en negro</label>
+          <input id="no-trabajo" type="radio" name="trabajo">
+<label for="no-trabajo">No tengo trabajo</label>
+      </span><br/>
     </fieldset>
   </form>
     <!-- Fin Form 3-->
-
     <form action=""><button type="submit">Enviar formulario</button></form>
   </body>
 </html>
